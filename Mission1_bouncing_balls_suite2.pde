@@ -44,11 +44,11 @@ void setup() {
 void draw() {
   changingcolourbackground ();
   for (int k = 0; k < balls.size(); k++) {
+    linkballs();
     wikipagesize (k);
     Ball part = balls.get(k);
-    linkballs();
     part.bouncingball(); 
-    nameball (part) ;
+    nameball (part, k) ;
     
     
   
